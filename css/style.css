@@ -1,0 +1,26 @@
+:root {
+  --primary-theme-color: #FDAB37; /* orange */
+  --secondary-theme-color: #4275B0; /* blue */
+  --thickness: 5px;
+  --size: 125px;
+  --border-radius-squareness: 1; /* a factor for scaling #'s */
+}
+
+/*------ Nav and Banner --------*/
+#nav-banner {
+  background: url("../assets/images/image.jpg") no-repeat center center;
+}
+
+.btn-green {
+  background-color: #00974C;
+  color: white;
+  padding: 21px 47px;
+}
+
+.btn-light, .btn-light:hover {
+  color: #00974C;
+  padding: 21px 56px;
+  border: 1px solid #00974C;
+  opacity: 0.4473586309523809;
+  background: transparent;
+}
