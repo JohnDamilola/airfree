@@ -31,6 +31,11 @@ body {
 #nav-banner {
   background: url('../assets/images/Bitmap.png') no-repeat center center;
   z-index: -1;
+  background-size: cover;
+}
+
+#nav-banner .text-white {
+  padding: 0 10rem;
 }
 
 header a {
