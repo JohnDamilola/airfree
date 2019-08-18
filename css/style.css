@@ -1,26 +1,362 @@
 :root {
-  --primary-theme-color: #FDAB37; /* orange */
-  --secondary-theme-color: #4275B0; /* blue */
-  --thickness: 5px;
-  --size: 125px;
-  --border-radius-squareness: 1; /* a factor for scaling #'s */
+    --primary-theme-color: #fdab37; /* orange */
+    --secondary-theme-color: #4275b0; /* blue */
+    --thickness: 5px;
+    --size: 125px;
+    --border-radius-squareness: 1; /* a factor for scaling #'s */
 }
-
+.px-7 {
+    padding: 0 10rem;
+}
+.px-7 {
+    padding: 0 8rem;
+}
+.w-80 {
+    width: 80%;
+}
+.w-85 {
+    width: 85%;
+}
 /*------ Nav and Banner --------*/
 #nav-banner {
-  background: url("../assets/images/image.jpg") no-repeat center center;
+    background: url('../assets/images/Bitmap.png') no-repeat center center;
+    z-index: -1;
+}
+
+header a {
+    color: #ffffff !important;
+}
+
+header ul:nth-child(1) {
+    width: 65%;
+    display: flex;
+    justify-content: space-evenly;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    text-align: left;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+header ul:nth-child(2) {
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    text-align: left;
+    font-family: 'Nunito Sans', sans-serif;
 }
 
 .btn-green {
-  background-color: #00974C;
-  color: white;
-  padding: 21px 47px;
+    background-color: #00974c;
+    color: white;
+    padding: 13px 47px;
+    border-radius: 4px;
 }
 
-.btn-light, .btn-light:hover {
-  color: #00974C;
-  padding: 21px 56px;
-  border: 1px solid #00974C;
-  opacity: 0.4473586309523809;
-  background: transparent;
+.btn-light,
+.btn-light:hover {
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    opacity: 0.4473586309523809;
+    padding: 13px 47px;
+    background: transparent;
+    color: #ffffff;
+}
+.btn-light-green {
+    border: 1px solid #00974c;
+    border-radius: 4px;
+    opacity: 0.4473586309523809;
+    padding: 13px 30px;
+    background: transparent;
+    color: #00974c;
+}
+.btn-green-nav {
+    background-color: #8ac34e;
+    border-radius: 4px;
+    width: 168px;
+    height: 48px;
+    color: #ffffff;
+}
+.pickPlan-bg {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)),
+        url('../assets/images/bg3.jpg') no-repeat center center;
+    background-size: cover;
+    width: 100%;
+    height: 35vw;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.pickPlan-bg .writeup {
+    height: 35%;
+}
+
+.pickPlan-bg .writeup h2 {
+    color: #ffffff;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 48px;
+    text-align: center;
+}
+
+.pickPlan-bg .writeup p {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    opacity: 0.8;
+    text-align: center;
+}
+
+.heroSection .heroSection__texts {
+    color: #ffffff;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.heroSection .heroSection__texts h1 {
+    color: #ffffff;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 48px;
+    width: 401px;
+    text-align: left;
+}
+
+.heroSection .heroSection__texts p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    opacity: 0.8;
+    width: 387px;
+    text-align: left;
+}
+
+.heroSection button:nth-child(0) {
+    background-color: #00974c !important;
+    border-radius: 4px !important;
+    width: 200px !important;
+    height: 60px !important;
+}
+
+/** this is the second section */
+
+.secondSection {
+    padding: 5rem 7rem 3rem 10rem;
+}
+.thirdSection {
+    padding: 5rem 7rem 3rem 10rem;
+}
+.whyUseUsSection {
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.whyUseUsSection .whyUseUsSection__header h2 {
+    color: #00974c;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 56px;
+    width: 594px;
+    text-align: left;
+}
+.whyUseUsSection .whyUseUsSection__header p {
+    color: #000d17;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    opacity: 0.8;
+    width: 471px;
+    text-align: left;
+}
+.whyUseUsSection .pricingCondition {
+    background-color: #8ac34e;
+    height: 622px;
+    padding: 4rem;
+}
+
+.whyUseUsSection .pricingCondition h2 {
+    color: #ffffff;
+    font-size: 2.3rem;
+    font-weight: 400;
+    line-height: 48px;
+}
+.whyUseUsSection .pricingCondition p {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    opacity: 0.8;
+    text-align: left;
+}
+.whyUseUsSection .pricingCondition button {
+    width: 100%;
+    margin: 0.5rem 0;
+}
+/** services */
+.service {
+    font-family: 'Nunito Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+}
+.service img {
+    height: 2.9rem;
+    margin-bottom: 2rem;
+}
+
+.service h2 {
+    color: #01111d;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 32px;
+    width: 70%;
+    margin-bottom: 1rem;
+}
+.service p {
+    color: #01111d;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    opacity: 0.8;
+    width: 65%;
+}
+
+/** learn more section*/
+.learnMore-bg {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)),
+        url('../assets/images/adult-airport-backpack-838413.jpg');
+    height: 50vw;
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    color: #ffffff;
+    font-family: 'Nunito Sans', sans-serif;
+    padding: 6rem 0;
+}
+.learnMore-bg h2 {
+    color: #ffffff;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 48px;
+    text-align: left;
+}
+.learnMore-bg p {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    opacity: 0.8;
+    text-align: left;
+}
+.learnMore-bg .checklist {
+    height: 11rem;
+    justify-content: space-between;
+}
+.learnMore-bg .checklist .check {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.learnMore-bg .checklist .check span {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17px;
+    text-align: left;
+    align-self: center;
+}
+
+.learnMore-bg .checklist .check img {
+    margin-right: 1rem;
+}
+
+/** a little more details */
+.littleMoreDetail {
+    padding: 9rem;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.littleMoreDetail .littleMoreDetail__writeup h2 {
+    color: #01111d;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 48px;
+    text-align: left;
+    padding-bottom: 1rem;
+}
+.littleMoreDetail .littleMoreDetail__writeup span {
+    color: #00974c;
+}
+.littleMoreDetail .littleMoreDetail__writeup p {
+    color: #01111d;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    opacity: 0.8;
+    width: 561px;
+    text-align: left;
+}
+
+/** product catalog */
+.productCatalog {
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.productCatalog .content {
+    padding: 5rem 20rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.productCatalog .content h2 {
+    color: #01111d;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 48px;
+    text-align: center;
+    width: 80%;
+    margin-bottom: 1.2rem;
+}
+
+.productCatalog .content p {
+    color: #01111d;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    opacity: 0.8;
+    width: 653px;
+    text-align: center;
+    width: 80%;
+}
+
+.productCatalog .productCatalog__products .product img {
+    width: 14rem;
+}
+.productCatalog .productCatalog__products .product {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.productCatalog .productCatalog__products .product h4 {
+    color: #01111d;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+    text-align: center;
+}
+.productCatalog .productCatalog__products {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 10rem;
 }

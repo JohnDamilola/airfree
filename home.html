@@ -10,6 +10,7 @@
     <!-- stylesheets link -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <link href="https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -18,17 +19,17 @@
     <!-- Nav and Banner Section -->
     <section id="nav-banner" class="container-fluid">
       <!-- Header -->
-      <div class="container">
+      <div class="container text-white">
         <header>
           <nav class="navbar navbar-expand-lg navbar-light">
-            <a class="navbar-brand" href="#">AirFree</a>
+            <a class="navbar-brand" href="#"><img src="assets/svg/svg8.svg" /></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
               aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav ml-auto">
+            <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+              <ul class="navbar-nav">
                 <li class="nav-item">
                   <a class="nav-link" href="#">Services</a>
                 </li>
@@ -36,23 +37,26 @@
                   <a class="nav-link" href="#">Pricing</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Help</a>
+                  <a class="nav-link" href="#">FAQ</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contact us</a>
                 </li>
               </ul>
-              <ul class="navbar-nav ml-auto">
+              <ul class="navbar-nav align-items-center">
                 <li class="nav-item">
                   <a class="nav-link" href="#">Login</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Quick Recharge</a>
+                  <a class="nav-link" href="#"><button class="btn-green-nav">Recharge</button></a>
                 </li>
               </ul>
             </div>
           </nav>
         </header>
         <!-- Banner -->
-        <div id="banner" class="row">
-          <div class="col-md-5">
+        <div id="banner" class="row heroSection">
+          <div class="col-md-5 heroSection__texts">
             <h1>Enjoy the best value and most reliable internet</h1>
             <p>Our Oomph bundles let you do anything, with faster fibre broadband speeds,
               a superfast SIM and all the TV you love.
@@ -64,74 +68,195 @@
       </div>
     </section>
     <!-- Products section -->
-    <section id="products" class="container-fluid">
+    <section id="products" class="container-fluid whyUseUsSection">
       <div class="row">
       <!-- First column -->
-        <div class="col-md-4">
-          <div>
-            <h2>Digital Leased Circuit (DLC)</h2>
-            <p>Digital Leased Circuit is a fixed bandwidth dedicated symmetric digital
-              connection between two or more sites.
-            </p>
+        <div class="col-md-8 container secondSection">
+          <div class="row container secondSection__rowOne">
+            <!-- this is the first sec-->
+            <div class="col-md-12 whyUseUsSection__header">
+              <h2>Why you have to subscribe to
+              Airfree Broadband ?</h3>
+              <p>Our Oomph bundles let you do anything, with faster fibre broadband speeds, a superfast SIM and all the TV you love.</p>
+            </div>
           </div>
-          <div>
-            <h2>Cooperate Internet Services</h2>
-            <p>We provide cooperate Internet Access which is reliable, dedicated,
-              secure and organized Internet access with elevated service levels.
-            </p>
-          </div>
-          <div>
-            <h2>Metro Fibre</h2>
-            <p>We offer new Fibre technology based on Metropolitan new Fibre Technology associated
-              with increase dynamic configurations increasing reliability, security and flexible management.
-            </p>
-          </div>
-        </div>
-        <!-- Second column -->
-        <div class="col-md-4">
-          <div>
-            <h2>Wireless Services</h2>
-            <p>Airfree has deployed its own metro access Network in each of the states where it operates.</p>
-          </div>
-          <div>
-            <h2>Adaptive Protected Network (APN)</h2>
-            <p>We offer an APN service which enables enterprises to combine two or more sources of inexpensive and abundant public
-              network connectivity to create a network with a better performance.
-            </p>
-          </div>
-          <div>
-            <h2>Cloud Services</h2>
-            <p>Airfree Cloud services are designed to provide easy, scable access to applications, resources and services and are fully
-              managed by a cloud service providers such as IBM, Microsoft and Huawei.
-            </p>
+          <div class="row mt-4">
+            <div class="col-md-6 service">
+              <img src="./assets/svg/svg6.svg" />
+              <h2>Digital Leased Circuit (DLC)</h2>
+              <p>Digital Leased Circuit is a fixed bandwidth dedicated symmetric digital
+                connection between two or more sites.
+              </p>
+            </div>
+            <div class="col-md-6 service">
+              <img src="./assets/svg/svg9.svg" />
+              <h2>Wireless Services</h2>
+              <p>Airfree has deployed its own metro access Network in each of the states where it operates.</p>
+            </div>
           </div>
         </div>
-        <div class="col-md-4">
-          <div>
-            <h1>Enjoy the best value and most reliable internet</h1>
-            <p>Comfortable work spaces and supporting administrative services to meet the diversified needs of our clients. Key to our
-              offering are modern technical equipment to give and the audience you may host an welcoming experience.
-            </p>
-            <button>See all Pricing</button>
-            <button>Terms & Conditions</button>
+        <!-- this is the second sec-->
+        <div class="col-md-4 pricingCondition">
+          <h2>Enjoy the best value and most reliable internet</h2>
+          <p>Comfortable work spaces and supporting administrative services to meet the diversified needs of our clients. Key to our
+          offering are modern technical equipment to give and the audience you may host an welcoming experience.</p>
+          <div class="d-flex flex-column">
+            <button class="btn-light">See all Pricing</button>
+            <button class="btn-light">Terms & Conditions</button>
           </div>
-          <div>
-            <h2>SMEmpower</h2>
-            <p>Whatever the size of your business, Airfree Technologies Limited broadband boosts your business performance with
-              uninterrupted and continuous connectivity.
-            </p>
-          </div>
+          
+        </div>
+      </div>
+
+      <!-- this is the second section row-->
+      <div class="row thirdSection">
+        <div class="col-md-4 service">
+          <img src="./assets/svg/svg1.svg" />
+          <h2>Cooperate Internet
+          Services</h2>
+          <p>We provide cooperate Internet Access which is reliable, dedicated, secure and organized Internet access with elevated
+          service levels learn more.
+          </p>
+        </div>
+        <div class="col-md-4 service">
+          <img src="./assets/svg/svg2.svg" />
+          <h2>Adaptive Protected
+          Network (APN)</h2>
+          <p>We offer an APN service which enables enterprises to combine two or more sources of inexpensive and abundant public
+          network connectivity to create a network with a better performance learn more.
+          </p>
+        </div>
+        <div class="col-md-4 service">
+          <img src="./assets/svg/svg3.svg" />
+          <h2>Cloud Services</h2>
+          <p>Airfree Cloud services are designed to provide easy, scable access to applications, resources and services and are fully
+          managed by a cloud service providers such as IBM, Microsoft and Huawei learn more.
+          </p>
+        </div>
+        <div class="col-md-4 service">
+          <img src="./assets/svg/svg10.svg" />
+          <h2>Metro Fibre</h2>
+          <p>We offer new Fibre technology based on Metropolitan new Fibre Technology associated with increase dynamic configurations
+          increasing reliability, security and flexible management learn more.
+          </p>
+        </div>
+        <div class="col-md-4 service">
+          <img src="./assets/svg/svg4.svg" />
+          <h2>Digital Leased Circuit (DLC)</h2>
+          <p>Digital Leased Circuit is a fixed bandwidth dedicated symmetric digital
+            connection between two or more sites.
+          </p>
         </div>
       </div>
     </section>
     <!-- Info section -->
-    <section class="container-fluid">
+    <section class="learnMore-bg">
+      <div class="row d-flex justify-content-between container px-7">
+        <div class="col-md-6">
+          <h2>Enjoy the best value and most reliable internet</h2>
+          <p>supporting administrative services to meet the diversified needs of our clients. Key to our offering are modern
+            technical equipment to give and the audience you may host an welcoming experience.</p>
+            <div class="checklist d-flex flex-column">
+              <div class="check d-flex">
+                <img src="./assets/svg/svg7.svg" />
+                <span>100% availability and always-on connectivity</span>
+              </div>
+              <div class="check d-flex">
+                <img src="./assets/svg/svg7.svg" />
+                <span>Professional IT support & 24x7 Customer service</span>
+              </div>
+              <div class="check d-flex">
+                <img src="./assets/svg/svg7.svg" />
+                <span>Unlimited data uploads and downloads</span>
+              </div>
+              <div class="check d-flex">
+                <img src="./assets/svg/svg7.svg" />
+                <span>Configuration and deployment within 24 hours</span>
+              </div>
+              <div class="check d-flex">
+                <img src="./assets/svg/svg7.svg" />
+                <span>Fiber-optic back-haul with a high-speed microwave last mile</span>
+              </div>
+            </div>
+            
+        </div>
+        <div class="col-md-6"></div>
+      </div>
+    </section>
+
+    <!-- this is the third section-->
+    <section class="container px-10 littleMoreDetail">
       <div class="row">
-        <div class="col-md-5 ml-auto">
-          <h1>Enjoy the best value and most reliable internet</h1>
-          <p>Comfortable work spaces and supporting administrative services to meet the diversified needs of our clients. Key to our
-            offering are modern technical equipment to give and the audience you may host an welcoming experience.
-          </p>
+        <div class="col-md-4"></div>
+        <div class="col-md-8 littleMoreDetail__writeup">
+          <h2>What is <span>airfree</span> doing, Breaking
+          frontiers in wireless solutions</h2>
+          <p>Airfree platform is an advanced Point-to-multi-point broadband wireless access solution delivering MPLS connectivity for
+          high-speed IP data and Internet applications. The platform's Carrier Class Services at upstream and downstream rates of
+          up to 50Mbps per CPE enables it to address clients' requirement for high bandwidth connectivity solutions. The platform
+          provides lastmile solutions for small, medium and large businesses including multi-dwelling and multi-tenant unit
+          (MDU/MTU) applications and ensures exceptional traffic handling capacity to provide fast, consistent services nation
+          wide.</p>
+          <div class="w-85 d-flex justify-content-between">
+            <button class="btn-light-green">learn more</button>
+            <button class="btn-light-green">Call us at 08139123492</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="pickPlan-bg text-white d-flex flex-column justify-content-center">
+      <div class="d-flex flex-column align-items-center justify-content-between writeup">
+        <h2 class="mb-2">Pick a plan today</h2>
+        <p class="mb-2">SignUp to get exclusive discount using airfree</p>
+        <div class="mt-2">
+          <button class="btn-light">
+            Enter email address
+          </button>
+          <button class="btn-green">
+            Get Started
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="productCatalog">
+      <div class="content">
+        <h2>What is airfree doing, Breaking
+        frontiers in wireless solutions</h2>
+        <p>Airfree platform is an advanced Point-to-multi-point broadband wireless access solution delivering MPLS connectivity for
+        high-speed IP data and Internet applications. The platform's Carrier Class Services at upstream and downstream rates of
+        up to 50Mbps per CPE enables it to address clients' requirement for high bandwidth connectivity solutions. The platform
+        provides lastmile solutions for small, medium and large businesses including multi-dwelling and multi-tenant unit
+        (MDU/MTU) applications and ensures exceptional traffic handling capacity to provide fast, consistent services nation
+        wide.</p>
+      </div>
+      <div class="productCatalog__products">
+        <div class="d-flex flex-column justify-content-center">
+          <img src="./assets/svg/left.svg" />
+        </div>
+        <div class="product">
+          <img src="./assets/images/mifi.png" />
+          <h4>Freedom Mifi</h4>
+          <button class="btn-light-green">Buy for N24,000</button>
+        </div>
+        <div class="product">
+          <img src="./assets/images/mifi.png" />
+          <h4>Freedom Mifi</h4>
+          <button class="btn-light-green">Buy for N32,000</button>
+        </div>
+        <div class="product">
+          <img src="./assets/images/mifi.png" />
+          <h4>Ace Mifi</h4>
+          <button class="btn-light-green">Buy for N48,000</button>
+        </div>
+        <div class="product">
+          <img src="./assets/images/mifi.png" />
+          <h4>Zoom CFE</h4>
+          <button class="btn-light-green">Buy for N96,000</button>
+        </div>
+        <div class="d-flex flex-column justify-content-center">
+          <img src="./assets/svg/right.svg" />
         </div>
       </div>
     </section>
