@@ -1,85 +1,76 @@
-:root {
-  --primary-theme-color: #fdab37; /* orange */
-  --secondary-theme-color: #4275b0; /* blue */
-  --thickness: 5px;
-  --size: 125px;
-  --border-radius-squareness: 1; /* a factor for scaling #'s */
-}
-.px-7 {
-  padding: 0 10rem;
-}
-.px-7 {
-  padding: 0 8rem;
-}
-.w-80 {
-  width: 80%;
-}
-.w-85 {
-  width: 85%;
-}
-.mt-70 {
-  margin-top: 70px
-}
-
 body {
   font-family: 'Nunito Sans', sans-serif;
   font-weight: 400;
 }
-
-
-/*------ Nav and Banner --------*/
-#nav-banner {
-  background: url('../assets/images/Bitmap.png') no-repeat center center;
-  z-index: -1;
-  background-size: cover;
+h1 {
+  font-size: 40px;
 }
-
-#nav-banner .text-white {
-  padding: 0 10rem;
+h2 {
+  font-size: 24px;
+  line-height: 48px;
 }
-
-header a {
-  color: #ffffff !important;
-}
-
-header ul:nth-child(1) {
-  width: 65%;
-  display: flex;
-  justify-content: space-evenly;
-  color: #ffffff;
+p {
   font-size: 14px;
-  line-height: 17px;
-  text-align: left;
+  line-height: 24px;
 }
-
-header ul:nth-child(2) {
-  width: 30%;
-  display: flex;
-  justify-content: space-between;
+h6 {
+  font-size: 18px;
+}
+a {
+  color: inherit;
+}
+a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+button {
+  border-radius: 4px;
+  border: none;
   color: #ffffff;
-  font-size: 14px;
-  line-height: 17px;
-  text-align: left;
+}
+button:focus {
+  outline: none;
 }
 
+/* <-------- Utilities ------> */
+.w-70 {
+  width: 70%;
+}
+.w-83 {
+  width: 83%;
+}
+.w-60 {
+  width: 60%;
+}
+.mt-70 {
+  margin-top: 70px
+}
+.mb-40 {
+  margin-bottom: 40px;
+}
+.opaque {
+  opacity: 0.8;
+}
+.green {
+  color: #00974c;
+}
+.lh-30 {
+  line-height: 30px
+}
+
+/* <------- Button classes ------> */
 .btn-green {
   background-color: #00974c;
-  color: white;
   padding: 13px 57px;
-  border-radius: 4px;
 }
-
 .btn-bright,
 .btn-bright:hover {
   border: 1px solid rgba(255,255,255,.4);
-  border-radius: 4px;
   padding: 11px 47px;
   background: transparent;
-  color: #ffffff;
 }
 .btn-light-green {
   border: 1px solid rgba(0,151,76,.4);
-  border-radius: 4px;
   background: transparent;
   color: #00974c;
   font-weight: 700;
@@ -91,125 +82,56 @@ header ul:nth-child(2) {
   padding: 13px 30px;
 }
 .btn-light-green.md {
-  padding: 13px 65px;
+  padding: 13px 55px;
 }
 .btn-green-nav {
   background-color: #8ac34e;
-  border-radius: 4px;
-  width: 168px;
-  height: 48px;
-  color: #ffffff;
+  padding: 17px 40px;
 }
-.pickPlan-bg {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)),
-    url('../assets/images/bg3.jpg') no-repeat center center;
+
+/*------ Nav and Banner --------*/
+#nav-banner {
+  background: url('../assets/images/Bitmap.png') no-repeat center center;
+  z-index: -1;
   background-size: cover;
-  padding: 250px 0;
+  padding: 0 145px;
 }
-
-.pickPlan-bg .writeup {
-    height: 35%;
-}
-
-.pickPlan-bg .writeup h2 {
-    color: #ffffff;
-    font-size: 40px;
-    line-height: 48px;
-    text-align: center;
-}
-
-.pickPlan-bg .writeup p {
-    color: #ffffff;
-    font-size: 16px;
-    line-height: 22px;
-    opacity: 0.8;
-    text-align: center;
-}
-
-.heroSection .heroSection__texts {
-    color: #ffffff;
-}
-
-.heroSection .heroSection__texts h1 {
-    color: #ffffff;
-    font-size: 40px;
-    line-height: 48px;
-    width: 401px;
-    text-align: left;
-    margin-bottom: 1rem;
-}
-
-.heroSection .heroSection__texts p {
-    font-size: 18px;
-    line-height: 30px;
-    opacity: 0.8;
-    width: 387px;
-    text-align: left;
-    margin-bottom: 2rem;
-}
-
-.heroSection button:nth-child(0) {
-    background-color: #00974c !important;
-    border-radius: 4px !important;
-    width: 200px !important;
-    height: 60px !important;
-}
-
-/** this is the second section */
-
-.secondSection {
-  padding: 5rem 7rem 3rem 10rem;
-}
-.thirdSection {
-  padding: 2rem 7rem 3rem 10rem;
-}
-#products {
-  color: #ffffff;
-}
-.whyUseUsSection__header {
-  margin-bottom: 40px;
-  padding-left: 0;
-}
-
-.whyUseUsSection__header h2 {
-  color: #00974c;
-  font-size: 40px;
-  line-height: 56px;
-  width: 594px;
-  text-align: left;
-  margin-bottom: 2rem;
-}
-.whyUseUsSection__header p {
-  color: #000d17;
-  font-size: 18px;
-  line-height: 30px;
-  opacity: 0.8;
-  width: 471px;
-  text-align: left;
-}
-.pricingCondition {
-  background-color: #8ac34e;
-  height: 622px;
-  padding: 4rem;
-}
-
-.pricingCondition h2 {
-  font-size: 30px;
-  line-height: 48px;
-}
-.pricingCondition p {
+header a {
+  color: #ffffff !important;
   font-size: 14px;
-  line-height: 24px;
-  opacity: 0.8;
-  text-align: left;
+  line-height: 17px;
 }
-.pricingCondition button {
-  width: 100%;
-  margin: 0.5rem 0;
+header ul:nth-child(1) {
+  width: 65%;
+  justify-content: space-evenly;
+}
+header ul:nth-child(2) {
+  width: 30%;
+  justify-content: space-between;
+}
+#banner {
+  padding-top: 123px;
+  padding-bottom: 200px;
 }
 
+/* <-------- Products Section --------> */
+#products {
+  color: #000d17;
+  padding: 0 15px 80px 160px;
+}
+.firstSection {
+  padding-top: 76px;
+}
+.secondSection {
+  padding-top: 86px;
+}
+.pricing {
+  color: #ffffff;
+  background-color: #8ac34e;
+  padding: 64px 20px 64px 50px;
+}
 
-/** services */
+/* <------- Services ------> */
 .service {
   color: #01111d;
   display: flex;
@@ -218,130 +140,64 @@ header ul:nth-child(2) {
   align-items: flex-start;
 }
 .service img {
-  height: 2.9rem;
+  height: 46px;
   margin-bottom: 2rem;
 }
-
-.service h2 {
-  font-size: 26px;
-  line-height: 32px;
-  width: 70%;
-  margin-bottom: 1rem;
-}
 .service p {
-  font-size: 14px;
-  line-height: 24px;
-  opacity: 0.8;
-  width: 65%;
+  margin-bottom: 0;
 }
 
-/** learn more section*/
-.learnMore-bg {
+/* <------- Info section -------> */
+#info {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)),
     url('../assets/images/adult-airport-backpack-838413.jpg') no-repeat center;
   background-size: cover;
   color: #ffffff;
-  padding: 10rem 0;
+  padding: 160px 0 160px 145px;
 }
-.learnMore-bg h2 {
-  font-size: 40px;
-  line-height: 48px;
-  text-align: left;
-}
-.learnMore-bg p {
-  font-size: 16px;
-  line-height: 30px;
-  opacity: 0.8;
-  text-align: left;
+#info p {
   margin: 2rem 0;
 }
 .checklist {
   height: 200px;
   justify-content: space-between;
 }
-.checklist .check {
-  display: flex;
+.check {
   justify-content: flex-start;
 }
-
-.checklist .check span {
+.check span {
   font-size: 14px;
   font-weight: 700;
   line-height: 17px;
-  text-align: left;
-  align-self: center;
 }
-
-.checklist .check img {
+.check img {
   margin-right: 1rem;
 }
 
-/** a little more details */
-.littleMoreDetail {
-  padding: 9rem;
+/* <-------- Contact Section -------> */
+#contact {
+  padding: 198px 0;
 }
 
-.littleMoreDetail .littleMoreDetail__writeup h2 {
+/* <----- Pick a Plan section ------> */
+#pickPlan {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)),
+    url('../assets/images/bg3.jpg') no-repeat center center;
+  background-size: cover;
+  padding: 250px 0;
+}
+
+/* <------- Product Catalog Section -------> */
+#catalog {
   color: #01111d;
-  font-size: 40px;
-  line-height: 48px;
-  text-align: left;
-  padding-bottom: 1rem;
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
-.littleMoreDetail .littleMoreDetail__writeup span {
-  color: #00974c;
-}
-.littleMoreDetail .littleMoreDetail__writeup p {
-  color: #01111d;
-  font-size: 14px;
-  line-height: 24px;
-  opacity: 0.8;
-  width: 561px;
-  text-align: left;
-}
-
-/** product catalog */
-.productCatalog {
-  color: #01111d;
-  text-align: center;
-  margin-bottom: 96px;
-}
-.content {
-  padding: 5rem 20rem;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-}
-.content h2 {
-  font-size: 40px;
-  line-height: 48px;
-  width: 80%;
-  margin-bottom: 2rem;
-}
-
-.content p {
-  font-size: 14px;
-  line-height: 24px;
-  opacity: 0.8;
-  width: 653px;
-  width: 80%;
-}
-
 .product img {
-  width: 14rem;
+  width: 150px;
+  height: auto;
 }
-.product {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-.product h4 {
-  font-size: 24px;
-  line-height: 32px;
-}
-.productCatalog .productCatalog__products {
+.catalog_products {
   display: flex;
   justify-content: space-around;
   padding: 0 10rem;
