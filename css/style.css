@@ -13,8 +13,11 @@ p {
   font-size: 14px;
   line-height: 24px;
 }
-h6 {
+h5 {
   font-size: 18px;
+}
+h6 {
+  font-size: 16px;
 }
 a {
   color: inherit;
@@ -201,4 +204,28 @@ header ul:nth-child(2) {
   display: flex;
   justify-content: space-around;
   padding: 0 10rem;
+}
+
+/* <------- Footer Section -------> */
+footer {
+  background-color: #F6F7F7;
+  color: #01111D;
+  padding-top: 80px;
+  padding-bottom: 60px;
+}
+.footer_content {
+  padding-right: 150px;
+  padding-left: 150px;
+}
+footer h5 {
+  font-weight: 700;
+  height: 35px;
+}
+.blocks {
+  height: 60%;
+}
+.copyright {
+  color: #979797;
+  padding-top: 60px;
+  padding-left: 15px;
 }
