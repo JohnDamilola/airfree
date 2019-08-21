@@ -6,8 +6,10 @@ h1 {
   font-size: 40px;
 }
 h2 {
+  font-size: 32px;
+}
+h3 {
   font-size: 24px;
-  line-height: 48px;
 }
 p {
   font-size: 14px;
@@ -34,7 +36,9 @@ button {
 button:focus {
   outline: none;
 }
-
+.active {
+  color: #00974C !important;
+}
 /* <-------- Utilities ------> */
 .w-70 {
   width: 70%;
@@ -94,12 +98,14 @@ button:focus {
 
 /*------ Nav and Banner --------*/
 #nav-banner {
-  background: url('../assets/images/Bitmap.png') no-repeat center center;
   z-index: -1;
-  background-size: cover;
   padding: 0 145px;
 }
-header a {
+.home {
+  background: url('../assets/images/Bitmap.png') no-repeat center center;
+  background-size: cover;
+}
+.home a {
   color: #ffffff !important;
   font-size: 14px;
   line-height: 17px;
@@ -228,4 +234,20 @@ footer h5 {
   color: #979797;
   padding-top: 60px;
   padding-left: 15px;
+}
+
+
+/* <---------- Services page ----------> */
+#nav-banner header a {
+  color: #000D17;
+  font-size: 14px;
+  line-height: 17px;
+}
+#services {
+  padding-top: 24px;
+  padding-bottom: 70px;
+}
+#services h6 {
+  line-height: 24px;
+  color: #01111D;
 }
