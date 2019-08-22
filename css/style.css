@@ -52,6 +52,12 @@ button:focus {
 .mt-70 {
   margin-top: 70px
 }
+.mb-100 {
+  margin-bottom: 100px;
+}
+.mb-80 {
+  margin-bottom: 80px;
+}
 .mb-40 {
   margin-bottom: 40px;
 }
@@ -61,8 +67,14 @@ button:focus {
 .green {
   color: #00974c;
 }
+.gray, .gray:hover {
+  color: #BCBDBE
+}
 .lh-30 {
   line-height: 30px
+}
+.h-55 {
+  height: 55px;
 }
 
 /* <------- Button classes ------> */
@@ -73,7 +85,7 @@ button:focus {
 .btn-bright,
 .btn-bright:hover {
   border: 1px solid rgba(255,255,255,.4);
-  padding: 11px 47px;
+  padding: 12px 47px;
   background: transparent;
 }
 .btn-light-green {
@@ -143,10 +155,6 @@ header ul:nth-child(2) {
 /* <------- Services ------> */
 .service {
   color: #01111d;
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-  align-items: flex-start;
 }
 .service img {
   height: 46px;
@@ -237,7 +245,7 @@ footer h5 {
 }
 
 
-/* <---------- Services page ----------> */
+/* <---------- Service page ----------> */
 #nav-banner header a {
   color: #000D17;
   font-size: 14px;
@@ -250,4 +258,33 @@ footer h5 {
 #services h6 {
   line-height: 24px;
   color: #01111D;
+}
+
+/* <---------- Services Page -------> */
+#servicePage {
+  color: #000D17;
+  padding-top: 67px;
+  padding-bottom: 40px;
+}
+
+/* <--------- Contact Us ---------> */
+#contactUs {
+  padding-bottom: 60px;
+}
+.contactUs {
+  background-color: #000D17;
+  border-radius: 4px;
+  color: #FFFFFF;
+}
+.contactUs img {
+  padding-top: 20px;
+}
+.contactText {
+  padding: 40px 0 40px 40px;
+}
+.contactText h3 {
+  line-height: 32px;
+}
+.contactText h6 {
+  padding-bottom: 45px;
 }
