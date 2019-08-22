@@ -38,6 +38,7 @@ button:focus {
 }
 .active {
   color: #00974C !important;
+  font-weight: 700;
 }
 /* <-------- Utilities ------> */
 .w-70 {
@@ -114,8 +115,13 @@ button:focus {
   padding: 0 145px;
 }
 .home {
-  background: url('../assets/images/Bitmap.png') no-repeat center center;
+  background-repeat: no-repeat ;
+  background-position: center;
   background-size: cover;
+  background-size: cover;
+  transition-property: background-image;
+  transition-duration: 2s;
+  transition-timing-function: linear;
 }
 .home a {
   color: #ffffff !important;
